@@ -1,5 +1,6 @@
 # 코딩테스트 입문 해설
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdevkgn88%2Fpcce_introductory&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+<img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=flat-square&logo=openjdk&logoColor=white">
 ## 소개
 프로그래머스 코딩테스트 입문 코드 풀이 저장소입니다.
 Day1부터 Day25까지 업로드 될 예정입니다.
@@ -10,14 +11,10 @@ Day1부터 Day25까지 업로드 될 예정입니다.
 코딩테스트 기초 해설 저장소도 구성할 예정입니다.
 
 ## 구성
-1. Day01 사칙연산
+#### Day01 사칙연산
    - 두 수의 합
 
-### 스택
-<img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=flat-square&logo=openjdk&logoColor=white"><br>
-<img src="https://img.shields.io/badge/Eclipse-FE7A16.svg?style=flat-square&logo=Eclipse&logoColor=white">
-
-## 
+## 문의
 코딩테스트 입문 해설을 보시다가 궁금한 점이 있으시면 아래 메일 주소로 연락주시기 바랍니다. 
 <p align="left">
   <a href="mailto:devkgn88@gmail.com"><img src="https://img.shields.io/badge/Gmail-D0A9F5?style=flat-square&logo=Gmail&logoColor=white&link=mailto:devkgn@gmail.com"/></a>
