@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=flat-square&logo=openjdk&logoColor=white">
 ## 소개
 프로그래머스 코딩테스트 입문 코드 풀이 저장소입니다.<br>
-Day1부터 Day25까지 업로드 될 예정입니다.
+Day01부터 Day25까지 업로드 될 예정입니다.
 
 ### 목표
 하루도 빠짐없이 한줄이라도 문제 상황을 해결하고자 합니다.<br>
@@ -17,5 +17,5 @@ Day1부터 Day25까지 업로드 될 예정입니다.
 ## 문의
 코딩테스트 입문 해설을 보시다가 궁금한 점이 있으시면 아래 메일 주소로 연락주시기 바랍니다. 
 <p align="left">
-  <a href="mailto:devkgn88@gmail.com"><img src="https://img.shields.io/badge/Gmail-D0A9F5?style=flat-square&logo=Gmail&logoColor=white&link=mailto:devkgn@gmail.com"/></a>
+  <a href="mailto:devkgn88@gmail.com">devkgn88@gmail.com</a>
 </p>
