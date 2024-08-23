@@ -18,5 +18,9 @@ public class Run {
 		Solution03 s3 = new Solution03();
 		System.out.println(s3.solution01(3, 4));
 		System.out.println(s3.solution02(27, 19));
+		
+		Solution04 s4 = new Solution04();
+		System.out.println(s4.solution01(10, 5));
+		System.out.println(s4.solution02(7, 2));
 	}
 }
