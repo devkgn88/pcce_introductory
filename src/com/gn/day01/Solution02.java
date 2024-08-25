@@ -13,6 +13,15 @@ public class Solution02 {
 	
 	public int solution02(int num1, int num2) {
 		return num1-num2;
+		
+	}
+	
+	public int solution03(int num1, int num2) {
+       int answer = 0;
+       if((-50000 <= num1 && num1 <= 50000) && (-50000 <= num1 && num1 <= 50000)) {
+    	   answer = num1 - num2;
+	   }
+        return answer;
 	}
 	
 	
