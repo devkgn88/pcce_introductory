@@ -7,6 +7,8 @@ public class Run {
 		System.out.println(s1.solution01(3, 2));
 		System.out.println(s1.solution02(3, 2));
 		System.out.println(s1.solution02(7, 3));
+	
+		
 	}
 
 }
