@@ -8,6 +8,10 @@ public class Run {
 		System.out.println(s1.solution02(3, 2));
 		System.out.println(s1.solution02(7, 3));
 	
+		Solution03 s3 = new Solution03();
+		int[] arr = s3.solution03(1, 2, 3, 4);
+		System.out.println(arr[0]);
+		System.out.println(arr[1]);
 		
 	}
 
