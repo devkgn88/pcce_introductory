@@ -11,7 +11,12 @@ public class Run {
 		s3.solution01("2 - 6 + 100 + 3");
 		s3.solution01("3 + 4");
 		
-		
+		Solution04 s4 = new Solution04();
+		String[] arr1 = {"a", "b", "c"};
+		String[] arr2 = {"com", "b", "d", "p", "c"};
+//		String[] arr1 = {"n", "omg"};
+//		String[] arr2 = {"m", "dot"};
+		System.out.println(s4.solution01(arr1, arr2));
 	}
 
 }
