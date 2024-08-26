@@ -13,6 +13,12 @@ public class Run {
 		System.out.println(arr[0]);
 		System.out.println(arr[1]);
 		
+		Solution04 s4 = new Solution04();
+		int[] numbers = {1,2,3,4,5};
+		int[] result = s4.solution01(numbers);
+		for(int r : result) {
+			System.out.println(r);
+		}
 	}
 
 }
