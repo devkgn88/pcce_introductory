@@ -9,5 +9,9 @@ public class Run {
 		Solution03 s3 = new Solution03();
 		System.out.println(s3.solution01(2, 10));
 		System.out.println(s3.solution01(7, 15));
+		
+		Solution04 s4 = new Solution04();
+		System.out.println(s4.solution01("Bcad"));
+		System.out.println(s4.solution02("heLLo"));
 	}
 }
