@@ -17,6 +17,14 @@ public class Run {
 //		}
 		s2.solution03("abcdef123", 3);
 		
+		Solution03 s3 = new Solution03();
+		s3.solution01(new int[] {1,1,2,3,4,5}, 1);
+		s3.solution02(new int[]{0,2,3,4},1);
+		
+		Solution04 s4 = new Solution04();
+		System.out.println(s4.solution01(new int[] {149, 180, 192, 170}, 167));;
+		System.out.println(s4.solution01(new int[] {180, 120, 140}, 190));;
+		
 	}
 
 }
