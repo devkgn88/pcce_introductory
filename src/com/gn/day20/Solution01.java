@@ -30,7 +30,7 @@ public class Solution01 {
     		
     	}
     	answer = (x2-x1)*(y2-y1);
-    	System.out.println(answer);
+    	//System.out.println(answer);
 
         return answer < 0 ? -answer : answer;
     }
