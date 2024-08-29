@@ -12,5 +12,11 @@ public class Run {
 		s2.solution02(new String[] {"down", "down", "down", "down", "down"}, 
 				new int[] {7,9});
 		
+		Solution03 s3 = new Solution03();
+		s3.solution02(new int[] {1, 2, -3, 4, -5});//15
+		s3.solution02(new int[] {0, -31, 24, 10, 1, 9});//240
+		s3.solution02(new int[] {10, 20, 30, 5, 5, 20, 5});//600
+		
+		
 	}
 }
