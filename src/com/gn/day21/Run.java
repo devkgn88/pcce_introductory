@@ -27,12 +27,26 @@ public class Run {
 //		                {1, 1, 1, 1, 1, 1}};
 //		s2.solution(arr3);
 		
-		Solution03 s3 = new Solution03();
-		System.out.println("===== 1,2 ====");
-		s3.solution01(new int[] {1,2});
-		System.out.println("===== 3,6 =====");
-		s3.solution02(new int[] {3,6});
-		System.out.println("===== 11,7 =====");
-		s3.solution02(new int[] {11,7});
+//		Solution03 s3 = new Solution03();
+//		System.out.println("===== 1,2 ====");
+//		s3.solution01(new int[] {1,2});
+//		System.out.println("===== 3,6 =====");
+//		s3.solution02(new int[] {3,6});
+//		System.out.println("===== 11,7 =====");
+//		s3.solution02(new int[] {11,7});
+		
+		Solution04 s4 = new Solution04();
+		String[] spell1 = {"p", "o", "s"};
+		String[] dic1 = {"sod", "eocd", "qixm", "adio", "soo"};
+		System.out.println(s4.solution(spell1, dic1));
+		
+		String[] spell2 = {"z", "d", "x"};
+		String[] dic2 = {"def", "dww", "dzx", "loveaw"};
+		System.out.println(s4.solution(spell2, dic2));
+		
+		String[] spell3 = {"s", "o", "m", "d"};
+		String[] dic3 = {"moos", "dzx", "smm", "sunmmo", "som"};
+		System.out.println(s4.solution(spell3, dic3));
+		
 	}
 }
