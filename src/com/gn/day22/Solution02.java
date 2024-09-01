@@ -47,4 +47,44 @@ public class Solution02 {
 
         return answer;
     }
+    
+    public int solution02(int[][] dots) {
+    	int answer = 0 ; 
+    	int[][] arr = new int[][]{{0,1,2,3}
+    							,{0,2,1,3}
+    							,{0,3,1,2}};
+    	for(int i = 0 ; i <arr.length ; i++) {
+    		int a = arr[i][0];
+    		int b = arr[i][1];
+    		int c = arr[i][2];
+    		int d = arr[i][3];
+    		System.out.println(a+":"+b+":"+c+":"+d);
+
+            double x1 = dots[a][0]; double y1 = dots[a][1];
+            double x2 = dots[b][0]; double y2 = dots[b][1];
+            double x3 = dots[c][0]; double y3 = dots[c][1];
+            double x4 = dots[d][0]; double y4 = dots[d][1];
+            System.out.println(x1+":"+y1);
+            System.out.println(x2+":"+y2);
+            System.out.println(x3+":"+y3);
+            System.out.println(x4+":"+y4);
+                        
+            if(x1 < x2) {
+            	double xb = x3 < x4 ? x4 - x3 : x3 - x4;
+            	double yb = x3 < x4 ? y4 - y3 : y3 - y4;  
+            	System.out.println("xb :"+xb);
+            	System.out.println("yb : "+yb);
+            	System.out.println("x2-x1 : "+(x2-x1));
+            	System.out.println("y2-y1 : "+(y2-y1));
+            	if((y2-y1)/(x2-x1) == yb / xb) answer = 1;
+            }else {
+            	double xb = x3 > x4 ? x4 - x3 : x3 - x4;
+            	double yb = x3 > x4 ? y4 - y3 : y3 - y4;
+            	if((y1-y2)/(x1-x2) == yb / xb) answer = 1;
+            }
+                
+    	}
+    	System.out.println("정답 : "+answer);
+    	return answer;
+    }
 }

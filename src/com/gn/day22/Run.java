@@ -14,13 +14,13 @@ public class Run {
 		                {3, 8}, 
 		                {11, 6}};
 		System.out.println("arr1");
-		System.out.println(s2.solution(arr1));
+		s2.solution02(arr1);
 		int[][] arr2 = {{3, 5}, 
 		                {4, 1}, 
 		                {2, 4}, 
 		                {5, 10}};
 		System.out.println("arr2222222222");
-		System.out.println(s2.solution(arr2));
+		s2.solution02(arr2);
 		
 	}
 
