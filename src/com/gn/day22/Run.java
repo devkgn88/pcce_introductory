@@ -22,7 +22,21 @@ public class Run {
 //		System.out.println("arr2222222222");
 //		s2.solution02(arr2);
 		
-		Solution03 s4 = new Solution03();
+//		Solution03 s3 = new Solution03();
+//		int[][] lines1 = {{0, 1}, {2, 5}, {3, 9}};
+//		System.out.println("=== lines1 ===");
+//		System.out.println(s3.solution(lines1));
+//		int[][] lines2 = {{-1, 1}, {1, 3}, {3, 9}};
+//		System.out.println("=== lines2 ===");
+//		System.out.println(s3.solution(lines2));
+//		int[][] lines3 = {{0, 5}, {3, 9}, {1, 10}};
+//		System.out.println("=== lines3 ===");
+//		System.out.println(s3.solution(lines3));
+		
+		Solution04 s4 = new Solution04();
+		s4.solution(7, 20);
+		s4.solution(11, 22);
+		s4.solution(12, 21);
 		
 	}
 
