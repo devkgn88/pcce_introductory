@@ -9,6 +9,9 @@ public class Run {
 //		s1.solution02(new int[]{10000,20,36,47,40,6,10,7000}, 30);
 		
 		Solution02 s2 = new Solution02();
-		
+		System.out.println("===1번===");
+		s2.solution02(new int[][] {{80,70},{90,50},{40,70},{50,80}});
+		System.out.println("===2번===");
+		s2.solution02(new int[][] {{80,70},{70,80},{30,50},{90,100},{100,90},{100,100},{10,30}});
 	}
 }
