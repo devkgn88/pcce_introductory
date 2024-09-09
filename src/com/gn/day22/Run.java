@@ -25,13 +25,16 @@ public class Run {
 		Solution03 s3 = new Solution03();
 		int[][] lines1 = {{0, 1}, {2, 5}, {3, 9}};
 		System.out.println("=== lines1 ===");
-		System.out.println("answer : "+s3.solution(lines1));
+//		s3.solution(lines1);
+		System.out.println("answer : "+s3.solution01(lines1));
 		int[][] lines2 = {{-1, 1}, {1, 3}, {3, 9}};
 		System.out.println("=== lines2 ===");
-		System.out.println("answer : "+s3.solution(lines2));
+//		s3.solution(lines2);
+		System.out.println("answer : "+s3.solution01(lines2));
 		int[][] lines3 = {{0, 5}, {3, 9}, {1, 10}};
 		System.out.println("=== lines3 ===");
-		System.out.println("answer : "+s3.solution(lines3));
+//		s3.solution(lines3);
+		System.out.println("answer : "+s3.solution01(lines3));
 		
 //		Solution04 s4 = new Solution04();
 //		s4.solution(7, 20);

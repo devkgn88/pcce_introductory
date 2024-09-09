@@ -1,9 +1,7 @@
 package com.gn.day22;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Solution03 {
 	// Three line segments lie parallel
@@ -65,27 +63,42 @@ public class Solution03 {
 //        return answer == 2 ? 0 : answer -1;
 //    }
 	
-	public int solution(int[][] lines) {
-		int answer = 0 ; 
-		List<List<Integer>> allList = new ArrayList<List<Integer>>();
-		for(int i = 0 ; i < lines.length ; i++) {
+//	public int solution(int[][] lines) {
+//		int answer = 0 ; 
+//		List<List<Integer>> allList = new ArrayList<List<Integer>>();
+//		for(int i = 0 ; i < lines.length ; i++) {
 //			for(int j = 0 ; j < lines.length ; j++) {
 //				if(i != j) {
 //					
 //				}
 //			}
-			List<Integer> list = new ArrayList<Integer>();
-			for(int j = lines[i][0] ; j <= lines[i][1] ; j++) {
-				//System.out.print(j+", ");
-				list.add(j);
+//			List<Integer> list = new ArrayList<Integer>();
+//			for(int j = lines[i][0] ; j <= lines[i][1] ; j++) {
+//				//System.out.print(j+", ");
+//				list.add(j);
+//			}
+//			System.out.println(list);
+//			allList.add(list);
+//		}
+//		
+//		
+//		
+//		return answer;
+//		
+//	}
+	
+	public int solution01(int[][] lines) {
+		int arr[][] = new int[][] {{0,1},{0,2},{1,2}};
+		Set<Double> result = new HashSet<Double>();
+		for(int i = 0 ; i < arr.length ; i++) {
+			int a = arr[i][0];
+			int b = arr[i][1];
+			for(double x = lines[a][0]+0.5 ; x < lines[a][1] ; x=x+1) {
+				for(double y = lines[b][0]+0.5 ; y < lines[b][1] ; y=y+1) {
+					if(x == y) result.add(x);
+				}
 			}
-			System.out.println(list);
-			allList.add(list);
 		}
-		
-		
-		
-		return answer;
-		
+		return result.size();
 	}
 }
