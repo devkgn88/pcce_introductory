@@ -137,4 +137,18 @@ public class Solution02 {
     	
     	return new int[] {};
     }
+    
+    public int[] solution03(int[][] score) {
+    	Map<Integer,Integer> map = new HashMap<Integer,Integer>();
+    	for(int i = 0 ; i < score.length ; i++) {
+    		map.put(i, (score[i][0]+score[i][1])/2);
+    	}
+    	for(int i : map.keySet()) {
+    		System.out.println(i+" : "+map.get(i));
+    	}
+    	
+    	return new int[] {};
+    }
+    
+    
 }
