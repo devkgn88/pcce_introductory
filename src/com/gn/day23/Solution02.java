@@ -2,11 +2,12 @@ package com.gn.day23;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-
-import javax.sound.sampled.ReverbType;
+import java.util.Set;
 
 public class Solution02 {
 	// We want to measure sudent's rank
@@ -139,15 +140,69 @@ public class Solution02 {
     }
     
     public int[] solution03(int[][] score) {
-    	Map<Integer,Integer> map = new HashMap<Integer,Integer>();
+    	Set<Integer> set = new HashSet<Integer>();
+    	
     	for(int i = 0 ; i < score.length ; i++) {
-    		map.put(i, (score[i][0]+score[i][1])/2);
-    	}
-    	for(int i : map.keySet()) {
-    		System.out.println(i+" : "+map.get(i));
+    		int avg = (score[i][0]+score[i][1])/2;
+    		set.add(avg);
     	}
     	
+    	List<Integer> list = new ArrayList<Integer>(set);
+    	Collections.sort(list,Collections.reverseOrder());
+    	
+    	int[] arr = new int[score.length];
+    	for(int i = 0 ; i < score.length ; i++) {
+    		int avg = (score[i][0]+score[i][1])/2;
+    		arr[i] = list.indexOf(avg)+1;
+    	}
+    	
+    	for(int i : arr) {
+    		System.out.println(i);
+    	}
+    	
+//    	for(int num : list) {
+//    		System.out.println(num);
+//    	}
+    	
+//    	for(int i : map.keySet()) {
+//    		System.out.println(i+" : "+map.get(i));
+//    	}
+    	
     	return new int[] {};
+    }
+    
+    public int[] solution04(int[][] score) {
+    	int[] answer = new int[score.length];
+    	int ranking = 1;
+    	for(int i = 0 ; i < score.length ; i++) {
+    		for(int j = 0 ; j < score.length ; j++) {
+    			if((score[i][0]+score[i][1]) < (score[j][0]+score[j][1])){
+                    ranking++;
+                } else if((score[i][0]+score[i][1]) == (score[j][0]+score[j][1])){
+                    continue;
+                } 
+    		}
+    		answer[i]= ranking;
+    		ranking =1;
+    	}
+    	for(int i : answer) {
+    		System.out.println(i);
+    	}
+    	return answer;
+    }
+    
+    public int[] solution05(int[][] score) {
+        List<Integer> scoreList = new ArrayList<>();
+        for(int[] t : score){
+            scoreList.add(t[0] + t[1]);
+        }
+        scoreList.sort(Comparator.reverseOrder());
+
+        int[] answer = new int[score.length];
+        for(int i=0; i<score.length; i++){
+            answer[i] = scoreList.indexOf(score[i][0] + score[i][1])+1;
+        }
+        return answer;
     }
     
     
