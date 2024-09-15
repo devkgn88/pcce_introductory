@@ -9,10 +9,15 @@ public class Solution01 {
 	// Complete the solution function so that if A can be pushed to reach B,
 	// it returns the minimum number of times it must be pushed, 
 	// and if it cannot be pushed to B, it returns -1.
-	public int solution02(String A, String B) {
-		return (B+B).indexOf(A);
-	}
-	
+	// 	 solution01 -> solution02
+	// test1 : 0.22 -> 1.86
+	// test2 : 0.31 -> 1.21
+	// test3 : 0.16 -> 1.31
+	// test4 : 1.00 -> 1.09
+	// test5 : 0.15 -> 1.63
+	// test6 : 0.43 -> 1.26
+	// test7 : 0.44 -> 1.16
+	// test8 : 0.25 -> 1.13
 	public int solution01(String A, String B) {
         int answer = -1;
         String[] arr = A.split("");
@@ -49,4 +54,9 @@ public class Solution01 {
         System.out.println(answer);
         return answer;
     }
+	
+	public int solution02(String A, String B) {
+		return (B+B).indexOf(A);
+	}
+	
 }
