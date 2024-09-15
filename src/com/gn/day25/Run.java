@@ -2,11 +2,16 @@ package com.gn.day25;
 
 public class Run {
 	public static void main(String[] args) {
-		Solution01 s1 = new Solution01();
-		s1.solution01("hello", "ohell");
-		s1.solution01("apple", "elppa");
-		s1.solution01("atat", "tata");
-		s1.solution01("abc", "abc");
+//		Solution01 s1 = new Solution01();
+//		s1.solution01("hello", "ohell");
+//		s1.solution01("apple", "elppa");
+//		s1.solution01("atat", "tata");
+//		s1.solution01("abc", "abc");
+		
+		Solution02 s2 = new Solution02();
+		s2.solution(2, 2);
+		s2.solution(2, 5);
+		s2.solution(1, 1);
 		
 		
 //		Solution03 s3 = new Solution03();
