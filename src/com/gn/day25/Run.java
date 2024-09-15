@@ -8,10 +8,10 @@ public class Run {
 //		s1.solution01("atat", "tata");
 //		s1.solution01("abc", "abc");
 		
-		Solution02 s2 = new Solution02();
-		s2.solution(2, 2);
-		s2.solution(2, 5);
-		s2.solution(1, 1);
+//		Solution02 s2 = new Solution02();
+//		s2.solution(2, 2);
+//		s2.solution(2, 5);
+//		s2.solution(1, 1);
 		
 		
 //		Solution03 s3 = new Solution03();
@@ -23,5 +23,11 @@ public class Run {
 //		s3.solution(4, 14);
 //		System.out.println("=== 4 ===");
 //		s3.solution(5, 5);
+		
+		Solution04 s4 = new Solution04();
+		System.out.println("=== 1 ===");
+		s4.solution(new int[] {1,2,3,4});
+		System.out.println("=== 2 ===");
+		s4.solution(new int[] {2,4,8});
 	}
 }
