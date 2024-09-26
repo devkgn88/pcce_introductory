@@ -2,9 +2,18 @@ package com.gn.day08;
 
 public class Run {
 	public static void main(String[] args) {
-		Solution02 s2 = new Solution02();
-		s2.solution01(23);
-		s2.solution02(51);
-		s2.solution01(100);
+//		Solution02 s2 = new Solution02();
+//		s2.solution01(23);
+//		s2.solution02(51);
+//		s2.solution01(100);
+		
+		Solution03 s3 = new Solution03();
+		System.out.println("=== 1 ===");
+		System.out.println(s3.solution01(new int[] {3, 76, 24}));
+		System.out.println("=== 2 ===");
+		System.out.println(s3.solution01(new int[] {1, 2, 3, 4, 5, 6, 7}));
+		System.out.println("=== 3 ===");
+		System.out.println(s3.solution01(new int[] {30, 10, 23, 6, 100}));
+		
 	}
 }
