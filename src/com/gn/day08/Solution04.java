@@ -22,12 +22,13 @@ public class Solution04 {
 	// case 10 : 4.40ms -> 0.06ms
 	
 	public int solution01(int n) {
-        int answer = 0;
-        for(int i = 1 ; i <= n ; i++){
-            if(n%i == 0) answer++;
-        }
-        return answer;
+		int answer = 0;
+		for(int i = 1 ; i <= n ; i++) {
+			if(n%i == 0) answer++;
+		}
+		return answer;
 	}
+	
 	
 	public int solution02(int n) {
         int answer = 0;
