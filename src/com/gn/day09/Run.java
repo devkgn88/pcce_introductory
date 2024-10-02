@@ -11,9 +11,13 @@ public class Run {
 //		System.out.println("=== hp : 999 ===");
 //		s1.solution01(999);
 		
-		Solution02 s2 = new Solution02();
-		s2.solution01(".... . .-.. .-.. ---");
-		s2.solution01(".--. -.-- - .... --- -.");
+//		Solution02 s2 = new Solution02();
+//		s2.solution01(".... . .-.. .-.. ---");
+//		s2.solution01(".--. -.-- - .... --- -.");
+		
+		Solution03 s3 = new Solution03();
+		s3.solution("2");
+		s3.solution("205");
 	}
 
 }

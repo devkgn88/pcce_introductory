@@ -22,7 +22,7 @@ public class Solution02 {
 	
 	
     public String solution01(String letter) {
-        String answer = "";
+        StringBuilder sb = new StringBuilder();
         
         Map<String,String> map = new HashMap<String,String>();
         map.put(".-","a");
@@ -55,9 +55,9 @@ public class Solution02 {
         String[] arr = letter.split(" ");
         for(String s : arr){
             if(map.containsKey(s)){
-                answer += map.get(s);
+                sb.append(map.get(s));
             }
         }
-        return answer;
+        return sb.toString();
     }
 }
