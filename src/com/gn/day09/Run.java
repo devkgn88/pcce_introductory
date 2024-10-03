@@ -15,9 +15,9 @@ public class Run {
 //		s2.solution01(".... . .-.. .-.. ---");
 //		s2.solution01(".--. -.-- - .... --- -.");
 		
-		Solution03 s3 = new Solution03();
-		s3.solution("2");
-		s3.solution("205");
+//		Solution03 s3 = new Solution03();
+//		s3.solution("2");
+//		s3.solution("205");
 	}
 
 }
