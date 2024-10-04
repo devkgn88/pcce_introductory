@@ -17,12 +17,57 @@ public class Solution04 {
 	// are given as parameters, complete the solution function 
 	// that returns the number of all possible cases of selecting the share number of marbles among the balls.
 
-	public int solution(int n, int m) {
+	// 3 * (3-1) / 2 = 3
+	// 5 * (5-1) * (5-2) / (3 * (3-1))
+	// 공이 5개 있는데 4개씩 묶을 수 있는 케이스는?
+	// 1 2 3 4 5 
+	// -> 1 2 3 4 
+	// -> 1 2 3 5
+	// -> 2 3 4 5 
+	// -> 3 4 5 1 
+	// -> 4 5 1 2 
+	// 5 * (5-1) * (5-2) * (5-3) / (4 * 4-1 * 4-2 * 4-3))
+	
+    public int solution_wrong(int balls, int share) {
+    	long num = 1;
+    	long den = 1;
+        for(int i = 0 ; i < share ; i++) {
+        	num *= balls-i;
+        	den *= share-i;
+        }
+        return (int)(num/den);
+    }
+    
+    public int solution_correct(int balls, int share) {
+    	long answer = 1;
+        for(int i = 0 ; i < share ; i++) {
+        	answer *= balls-i;
+        	answer /= i+1;
+        }
+        return (int)answer;
+    }
+	
+	public int solution01(int n, int m) {
 		long answer = 1;
 		for(int i = 1 ; i <= m ; i++){
 		answer *= (n-i+1);
 		answer /= i;
 		}
+		System.out.println(answer);
 		return (int)answer;
 	}
+	
+//    public BigInteger solution02(int balls, int share){
+//        return fac(balls).divide(fac(balls-share).multiply(fac(share)));
+//    }
+//    
+//    public BigInteger fac(int num){
+//        BigInteger ret = new BigInteger("1");
+//        BigInteger from = new BigInteger("1");
+//        BigInteger to = new BigInteger(String.valueOf(num));
+//        for(BigInteger i = from ; i.compareTo(to) <= 0 ; i= i.add(BigInteger.ONE)){
+//            ret = ret.multiply(i);
+//        }
+//        return ret;
+//    }
 }
