@@ -19,11 +19,17 @@ public class Run {
 //		s3.solution("2");
 //		s3.solution("205");
 		
-		Solution04 s4 = new Solution04();
-		System.out.println("=== 3,2 ====");
-		s4.solution01(3, 2);
-		System.out.println("=== 5,3 ===");
-		s4.solution01(5, 3);
+//		Solution04 s4 = new Solution04();
+//		System.out.println("=== 3,2 ====");
+//		s4.solution01(3, 2);
+//		System.out.println("=== 5,3 ===");
+//		s4.solution01(5, 3);
+        long multi = 1;
+        for(int i = 30 ; i >= 16 ; i--){
+            
+            System.out.println(multi);
+            multi *= i;
+        }
 	}
 
 }

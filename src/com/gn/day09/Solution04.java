@@ -1,5 +1,7 @@
 package com.gn.day09;
 
+import java.math.BigInteger;
+
 // 구슬을 나누는 경우의 수
 // Number of ways to divide beads
 public class Solution04 {
@@ -57,17 +59,17 @@ public class Solution04 {
 		return (int)answer;
 	}
 	
-//    public BigInteger solution02(int balls, int share){
-//        return fac(balls).divide(fac(balls-share).multiply(fac(share)));
-//    }
-//    
-//    public BigInteger fac(int num){
-//        BigInteger ret = new BigInteger("1");
-//        BigInteger from = new BigInteger("1");
-//        BigInteger to = new BigInteger(String.valueOf(num));
-//        for(BigInteger i = from ; i.compareTo(to) <= 0 ; i= i.add(BigInteger.ONE)){
-//            ret = ret.multiply(i);
-//        }
-//        return ret;
-//    }
+    public BigInteger solution02(int balls, int share){
+        return fac(balls).divide(fac(balls-share).multiply(fac(share)));
+    }
+    
+    public BigInteger fac(int num){
+        BigInteger ret = new BigInteger("1");
+        BigInteger from = new BigInteger("1");
+        BigInteger to = new BigInteger(String.valueOf(num));
+        for(BigInteger i = from ; i.compareTo(to) <= 0 ; i= i.add(BigInteger.ONE)){
+            ret = ret.multiply(i);
+        }
+        return ret;
+    }
 }
